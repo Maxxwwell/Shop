@@ -11,6 +11,11 @@
 		0448BEA12B712B6E008D15F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448BEA02B712B6E008D15F3 /* ContentView.swift */; };
 		0448BEA32B712B70008D15F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0448BEA22B712B70008D15F3 /* Assets.xcassets */; };
 		0448BEA62B712B70008D15F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0448BEA52B712B70008D15F3 /* Preview Assets.xcassets */; };
+		0448BEAF2B713151008D15F3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448BEAE2B713151008D15F3 /* SplashScreen.swift */; };
+		0448BEB22B7136F7008D15F3 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448BEB12B7136F7008D15F3 /* OnboardingScreen.swift */; };
+		0448BEB42B713AFE008D15F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448BEB32B713AFE008D15F3 /* Constants.swift */; };
+		044ECC2A2B726D7800072289 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ECC292B726D7800072289 /* OnboardingModel.swift */; };
+		04D27B6E2B73B45C0011F69C /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D27B6D2B73B45C0011F69C /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		0448BEA02B712B6E008D15F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0448BEA22B712B70008D15F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0448BEA52B712B70008D15F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0448BEAE2B713151008D15F3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		0448BEB12B7136F7008D15F3 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		0448BEB32B713AFE008D15F3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		044ECC292B726D7800072289 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		04D27B6D2B73B45C0011F69C /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,13 @@
 		0448BE9D2B712B6E008D15F3 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
+				044ECC282B726D5600072289 /* Model */,
+				0448BEAC2B71310B008D15F3 /* Views */,
 				0448BE9E2B712B6E008D15F3 /* ShopApp.swift */,
 				0448BEA02B712B6E008D15F3 /* ContentView.swift */,
 				0448BEA22B712B70008D15F3 /* Assets.xcassets */,
 				0448BEA42B712B70008D15F3 /* Preview Content */,
+				0448BEB32B713AFE008D15F3 /* Constants.swift */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -65,6 +78,48 @@
 				0448BEA52B712B70008D15F3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0448BEAC2B71310B008D15F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04D27B6C2B73B43A0011F69C /* Auth */,
+				0448BEB02B7136C8008D15F3 /* OnboardingScreen */,
+				0448BEAD2B713121008D15F3 /* splash */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0448BEAD2B713121008D15F3 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				0448BEAE2B713151008D15F3 /* SplashScreen.swift */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		0448BEB02B7136C8008D15F3 /* OnboardingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0448BEB12B7136F7008D15F3 /* OnboardingScreen.swift */,
+			);
+			path = OnboardingScreen;
+			sourceTree = "<group>";
+		};
+		044ECC282B726D5600072289 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				044ECC292B726D7800072289 /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04D27B6C2B73B43A0011F69C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				04D27B6D2B73B45C0011F69C /* LoginScreen.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0448BEB42B713AFE008D15F3 /* Constants.swift in Sources */,
+				0448BEB22B7136F7008D15F3 /* OnboardingScreen.swift in Sources */,
+				044ECC2A2B726D7800072289 /* OnboardingModel.swift in Sources */,
+				0448BEAF2B713151008D15F3 /* SplashScreen.swift in Sources */,
+				04D27B6E2B73B45C0011F69C /* LoginScreen.swift in Sources */,
 				0448BEA12B712B6E008D15F3 /* ContentView.swift in Sources */,
 				0448BE9F2B712B6E008D15F3 /* ShopApp.swift in Sources */,
 			);
