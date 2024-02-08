@@ -11,10 +11,12 @@
 		0448BEA12B712B6E008D15F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448BEA02B712B6E008D15F3 /* ContentView.swift */; };
 		0448BEA32B712B70008D15F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0448BEA22B712B70008D15F3 /* Assets.xcassets */; };
 		0448BEA62B712B70008D15F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0448BEA52B712B70008D15F3 /* Preview Assets.xcassets */; };
-		0448BEAF2B713151008D15F3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448BEAE2B713151008D15F3 /* SplashScreen.swift */; };
 		0448BEB22B7136F7008D15F3 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448BEB12B7136F7008D15F3 /* OnboardingScreen.swift */; };
 		0448BEB42B713AFE008D15F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448BEB32B713AFE008D15F3 /* Constants.swift */; };
 		044ECC2A2B726D7800072289 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ECC292B726D7800072289 /* OnboardingModel.swift */; };
+		04AA150C2B7502500053012D /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA150B2B7502500053012D /* ForgotPassword.swift */; };
+		04AA15122B750C020053012D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA15112B750C020053012D /* Validator.swift */; };
+		04AA15142B75107F0053012D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AA15132B75107F0053012D /* LaunchScreen.storyboard */; };
 		04D27B6E2B73B45C0011F69C /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D27B6D2B73B45C0011F69C /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,10 +26,12 @@
 		0448BEA02B712B6E008D15F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0448BEA22B712B70008D15F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0448BEA52B712B70008D15F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0448BEAE2B713151008D15F3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		0448BEB12B7136F7008D15F3 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		0448BEB32B713AFE008D15F3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		044ECC292B726D7800072289 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		04AA150B2B7502500053012D /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		04AA15112B750C020053012D /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		04AA15132B75107F0053012D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D27B6D2B73B45C0011F69C /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +65,7 @@
 		0448BE9D2B712B6E008D15F3 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
+				04AA150E2B7508660053012D /* Controller */,
 				044ECC282B726D5600072289 /* Model */,
 				0448BEAC2B71310B008D15F3 /* Views */,
 				0448BE9E2B712B6E008D15F3 /* ShopApp.swift */,
@@ -93,7 +98,7 @@
 		0448BEAD2B713121008D15F3 /* splash */ = {
 			isa = PBXGroup;
 			children = (
-				0448BEAE2B713151008D15F3 /* SplashScreen.swift */,
+				04AA15132B75107F0053012D /* LaunchScreen.storyboard */,
 			);
 			path = splash;
 			sourceTree = "<group>";
@@ -114,10 +119,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		04AA150E2B7508660053012D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04AA15112B750C020053012D /* Validator.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		04D27B6C2B73B43A0011F69C /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				04D27B6D2B73B45C0011F69C /* LoginScreen.swift */,
+				04AA150B2B7502500053012D /* ForgotPassword.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -180,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AA15142B75107F0053012D /* LaunchScreen.storyboard in Resources */,
 				0448BEA62B712B70008D15F3 /* Preview Assets.xcassets in Resources */,
 				0448BEA32B712B70008D15F3 /* Assets.xcassets in Resources */,
 			);
@@ -193,9 +208,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0448BEB42B713AFE008D15F3 /* Constants.swift in Sources */,
+				04AA15122B750C020053012D /* Validator.swift in Sources */,
 				0448BEB22B7136F7008D15F3 /* OnboardingScreen.swift in Sources */,
 				044ECC2A2B726D7800072289 /* OnboardingModel.swift in Sources */,
-				0448BEAF2B713151008D15F3 /* SplashScreen.swift in Sources */,
+				04AA150C2B7502500053012D /* ForgotPassword.swift in Sources */,
 				04D27B6E2B73B45C0011F69C /* LoginScreen.swift in Sources */,
 				0448BEA12B712B6E008D15F3 /* ContentView.swift in Sources */,
 				0448BE9F2B712B6E008D15F3 /* ShopApp.swift in Sources */,
@@ -332,6 +348,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +377,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

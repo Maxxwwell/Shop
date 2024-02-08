@@ -11,8 +11,8 @@ import SwiftUI
 struct ShopApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashScreen()
-//            ContentView()
+//        ContentView()
+            OnboardingScreen()
         }
     }
 }
