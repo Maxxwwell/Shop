@@ -15,7 +15,6 @@
 		0448BEB42B713AFE008D15F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448BEB32B713AFE008D15F3 /* Constants.swift */; };
 		044ECC2A2B726D7800072289 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ECC292B726D7800072289 /* OnboardingModel.swift */; };
 		04AA150C2B7502500053012D /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA150B2B7502500053012D /* ForgotPassword.swift */; };
-		04AA15122B750C020053012D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA15112B750C020053012D /* Validator.swift */; };
 		04AA15142B75107F0053012D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AA15132B75107F0053012D /* LaunchScreen.storyboard */; };
 		04D27B6E2B73B45C0011F69C /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D27B6D2B73B45C0011F69C /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
@@ -30,7 +29,6 @@
 		0448BEB32B713AFE008D15F3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		044ECC292B726D7800072289 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		04AA150B2B7502500053012D /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
-		04AA15112B750C020053012D /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		04AA15132B75107F0053012D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D27B6D2B73B45C0011F69C /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +120,6 @@
 		04AA150E2B7508660053012D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04AA15112B750C020053012D /* Validator.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -208,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0448BEB42B713AFE008D15F3 /* Constants.swift in Sources */,
-				04AA15122B750C020053012D /* Validator.swift in Sources */,
 				0448BEB22B7136F7008D15F3 /* OnboardingScreen.swift in Sources */,
 				044ECC2A2B726D7800072289 /* OnboardingModel.swift in Sources */,
 				04AA150C2B7502500053012D /* ForgotPassword.swift in Sources */,
